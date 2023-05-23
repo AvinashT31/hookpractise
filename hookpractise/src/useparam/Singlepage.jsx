@@ -34,7 +34,7 @@
 // export default Singlepage
 
 
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 const Data1 = require('../json/practise.json')
 
@@ -51,6 +51,7 @@ const Singlepage = () => {
         setshowData(filter);
     }, [])
 
+    
   return (
     <div>
       {showData && showData.map((e) => (

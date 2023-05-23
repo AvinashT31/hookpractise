@@ -3,15 +3,15 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import FetchAPI from './useparam/FetchAPI';
 import Singlepage from './useparam/Singlepage';
+// import Child from './UseContext/Child';
 
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route exact path='/' element={<FetchAPI/>}></Route>
-        <Route exact path='/:id' element={<Singlepage/>}></Route>
-      </Routes>
-
+        <Routes>
+          <Route exact path='/' element={<FetchAPI />}></Route>
+          <Route exact path='/:id' element={<Singlepage />}></Route>
+        </Routes>
     </div>
   );
 }

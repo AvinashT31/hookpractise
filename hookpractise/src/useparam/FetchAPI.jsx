@@ -35,7 +35,7 @@
 // export default FetchAPI
 
 
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 const fetchData = require('../json/practise.json')
 
@@ -53,6 +53,7 @@ const FetchAPI = () => {
     function opennewpage(e){
         route(`/${e.id}`)
     }
+
   return (
     <div>
       {api && api.map((e) => (
